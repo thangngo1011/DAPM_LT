@@ -25,15 +25,16 @@
 </style>
 <br />
 @*<h3 style="color:black; text-align:center;">&nbsp;&nbsp; 🔥HOT🔥 </h3>*@
-<div style="text-align:center; position:relative; right:20%;" >
-    <img width="400px", height="400px", src="~/Content/images/logo_coffee.png"  />
+<div style="text-align:center; position:relative; right:5%;">
+    <img width="300" , height="300" src="~/Content/images/logo_coffee.png" />
 </div>
-<div style="list-style-type: none; text-align:center; " id="div-u" >
+
+<div style="list-style-type: none; text-align:center; " id="div-u">
     @{
         foreach (var item in Model)
         {
             <div class="div-cate">
-                @Html.ActionLink(item.NameCate, "ProductList", "Products", new {category = item.IDCate}, "")
+                @Html.ActionLink(item.NameCate, "ProductList", "Products", new { category = item.IDCate }, "")
             </div>
             <hr />
         }

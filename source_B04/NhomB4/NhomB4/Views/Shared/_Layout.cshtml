@@ -15,7 +15,7 @@
         #div-footer {
             text-align: center;
             padding-top: 15px;
-            height: 50px;
+            height: 60px;
             width: 100%;
             background-color: #27ae60;
         }
@@ -39,7 +39,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Trang chủ", "ProductList", "Products")</li>
                     <li>@Html.ActionLink("Giới thiệu", "About", "Home")</li>
-                    <li>@Html.ActionLink("Sản phẩm", "Index", "Products")</li>
+                    <li>@Html.ActionLink("Menu", "Index", "Products")</li>
    @*                 <li>@Html.ActionLink("Loại SP", "Index", "Categories")</li>
             <li>@Html.ActionLink("Khách hàng", "Index", "Customers")</li>
             <li>@Html.ActionLink("Đơn hàng", "Index", "OrderProes")</li>*@
@@ -47,7 +47,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Quản lý <span class="caret"></span></a>
             <ul class="dropdown-menu">
                
-                     <li>@Html.ActionLink("Đăng nhập(Admin)", "LoginAccount", "LoginUsers")</li>
+                     <li>@Html.ActionLink("Đăng nhập", "LoginAccount", "LoginUsers")</li>
                     </ul>
         </li>
                 </ul>
@@ -57,8 +57,8 @@
                         @Html.Action("BagCart", "ShoppingCart")
 
                     </li>
-                    <li><a href="/Customers/Create"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
-                    <li><a href="/Customers/LoginCus"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    <li><a href="/Customers/Create"><span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
+                    <li><a href="/Customers/LoginCus"><span class="glyphicon glyphicon-log-in"></span>Đăng nhập</a></li>
                   @*  <li><a class="lienket" href="@Url.Action("LogOutUser","LoginUsers")">Đăng Xuất</a></li>*@
                     <li class="format-hello">
                         @if (Session["NameCus"] == null)
@@ -116,7 +116,7 @@
                 <p style="color: #dfe6e9; background-color: #3b161e;">
                     Sales : 024 2260 2028 / 29 - Hotline: 090 622 5503
                 </p>
-                <p style="color: #dfe6e9; background-color: #3b161e;">Email: pn.vn - Web: pn.vn</p>
+                <p style="color: #dfe6e9; background-color: #3b161e;">Email: pn@gmail.com - Web: pn.vn</p>
             </div>
         </div>
     </div>

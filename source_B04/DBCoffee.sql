@@ -1,11 +1,11 @@
 ﻿use master
-if exists (select * from sysdatabases where name = 'DBCayCanhNhomB04')
-	drop database DBCayCanhNhomB04
+if exists (select * from sysdatabases where name = 'DBCoffee')
+	drop database DBCoffee
 go
 
-create database DBCayCanhNhomB04
+create database DBCoffee
 go
-use DBCayCanhNhomB04
+use DBCoffee
 go
 
 CREATE TABLE [dbo].[AdminUser] (
@@ -115,64 +115,26 @@ Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
 Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
     values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img8.jpg')
 
-
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Nga My', N'thân cột thấp, màu xám bạc', N'CATBM', 900, '/Content/images/img9.jpg')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Osaka', N'cây trung mộc, cao khoảng từ 10 đến 20m', N'CATBM', 1000, '/Content/images/img10.jpg')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Phúc', N'cây thân gỗ thường xanh', N'CATBM', 1500, '/Content/images/img11.jpg')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây tre vàng', N'có vóc dáng đẹp, ít gai', N'CATBM', 200, '/Content/images/img12.jpg')
-
-
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Bạch Mã Hoàng Tử', N'cây thuộc thân thảo, sống lâu năm', N'CNTVP', 650, '/Content/images/img13.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Cau Hawai', N'cây thân bụi, nhỏ và có chiều cao nhất là 3m', N'CNTVP', 650, '/Content/images/img14.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Cau Nhật-Cau Vàng', N'dáng đẹp, thân cứng cáp', N'CNTVP', 750, '/Content/images/img15.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Hồng Môn Lớn', N'cây sống lâu năm, thường mọc thành bụi', N'CNTVP',800, '/Content/images/img16.png')
-
-
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây cỏ đồng tiền', N'thân thảo mềm, có lá dạng hình tròn', N'CTS', 30, '/Content/images/img17.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây kim tiền', N'loại cây dễ chùm, sống lâu năm', N'CTS', 700, '/Content/images/img18.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Ngọc Ngân Thủy Sinh', N'có lá khá nổi bật', N'CTS',180, '/Content/images/img19.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Lưỡi Hổ Thủy Sinh', N'sở hữu khả năng lọc khí cực tốt', N'CTS', 185, '/Content/images/img20.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Phú Quý Thủy Sinh', N'thân thảo mềm, có lá dạng hình tròn', N'CTS', 170, '/Content/images/img21.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Thanh Tú', N'thân thảo, mọc theo bụi', N'CTS', 65, '/Content/images/img22.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Trầu Bà Thủy Sinh', N'hân thảo leo, thân tròn mập', N'CTS', 180, '/Content/images/img23.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây trúc phú quý', N'thân thảo sống lâu năm', N'CTS', 275, '/Content/images/img24.png')
-
-	 
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Hoa Dừa Cạn', N'mọc thành bụi, lá xanh quanh năm', N'CTG', 65, '/Content/images/img25.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Cây Thanh Tú', N'thân thảo, mọc theo bụi', N'CTG', 65, '/Content/images/img26.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Dạ Yến Thảo', N'sở hữu rất nhiều màu sắc', N'CTG', 95, '/Content/images/img27.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Trầu Bà Cẩm Thạch', N'thân cỏ, dạng dây leo, sống lâu năm', N'CTG', 95, '/Content/images/img28.png')
-
-
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Chậu CN 30-60', N'xi măng giả đá', N'MCCC', 300, '/Content/images/img29.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Chậu composite hình thang cao', N'sản xuất và tổng hợp từ sợi thủy tinh', N'MCCC', 700, '/Content/images/img30.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Chậu giọt nước', N'xi măng đá mài tròn hình Giọt Nước', N'MCCC', 300, '/Content/images/img31.png')
---Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
---    values (N'Chậu trụ tròn bầu đáy', N'đá mài đen, trụ tròn', N'MCCC', 350, '/Content/images/img32.png')
-
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img9.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img10.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img11.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img12.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img13.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img14.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img15.jpeg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img16.jpeg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img17.jpg')
+Insert into Product (NamePro, DecriptionPro, Category, Price, ImagePro)
+    values (N'Cà phê Cascara', N'Cascara là một loại đồ uống được làm từ trái cây cà phê Cherry đã được sấy khô. Nó có hương vị ngọt ngào và thường được nấu thành trà.', N'CDB', 180, '/Content/images/img18.jpg')
 
 --------OrderPro
 Insert into OrderPro (DateOrder, IDCus, AddressDeliverry)

@@ -36,16 +36,7 @@ namespace NhomB4.Controllers
             {
                 products = db.Products.OrderByDescending(x => x.Price).Where(p => (double)p.Price >= min && (double)p.Price <= max);
             }
-            // Khai báo mỗi trang 4 sản phẩm
-            // Khai báo mỗi trang 4 sản phẩm
-            /*     int pageSize = 12;
-                 // Toán tử ?? trong C# mô tả nếu page khác null thì lấy giá trị page, còn
-                 // nếu page = null thì lấy giá trị 1 cho biến pageNumber.
-                 int pageNumber = (page ?? 1);
-                 // Nếu page = null thì đặt lại page là 1.
-                 if (page == null) page = 1;
-                 // Trả về các product được phân trang theo kích thước và số trang.
-                 return View(products.ToPagedList(pageNumber, pageSize));*/
+            
             return View(products.ToList());
 
         }

@@ -4,47 +4,84 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+    
+    <link rel="stylesheet" href="~/Content/product-detail.css" type="text/css">
 }
 <div align="center">
     <div class="container-fluid">
-        <div class="row" style="background-color: #27ae60;color:white;">
-            <h2 style="text-align:center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CHI TIẾT</h2>
+        <div class="row" style="background-color: #3b161e; color: white;">
+            <h2 style="text-align:center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CHI TIẾT SẢN PHẨM</h2>
         </div>
-        @*    SỬA*@
-        <div class="row">
+        <main role="main">
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="container-fliud">
+                        <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post"
+                              action="/php/twig/frontend/giohang/themvaogiohang">
+                            <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                            <input type="hidden" name="sp_ten" id="sp_ten">
+                            <input type="hidden" name="sp_gia" id="sp_gia">
+                            <input type="hidden" name="hinhdaidien" id="hinhdaidien">
 
-            <div class=" col-sm-5">
-                <img src="@Html.DisplayFor(model=>model.ImagePro)" width="400" height="550" />
-                @*<p>@Html.DisplayFor(model => model.NamePro)</p>
-                <p>@Html.DisplayFor(model => model.DecriptionPro)</p>
-                <p> @Html.DisplayFor(model => model.Price)</p>*@
-            </div>
-            <div class=" col-xm-12 col-sm-6 col-md-4 col-lg-3" align="center">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <p><b>Tên sản phẩm:</b> @Html.DisplayFor(model => model.NamePro)</p>
-                <br />
-                <p><b>Mô tả: </b>@Html.DisplayFor(model => model.DecriptionPro)</p>
-                <br />
-                <p><b>Giá: </b> @Html.DisplayFor(model => model.Price)</p>
-                <div style="align-items:center;">
-                    <a href="/ShoppingCart/AddToCart/@Html.DisplayFor(model => model.ProductID)" class="btn btn-success" style="align-items:center; width:200px;"> Mua </a>
+                            <div class="wrapper row">
+                                <div class="preview col-md-6">
+                                    <div class="preview-pic tab-content">
+                                        <img src="@Html.DisplayFor(model=>model.ImagePro)" width="400" height="300" />
+                                    </div>
+                                </div>
+                                <div class="details col-md-6">
+                                    <h3 class="product-title">@Html.DisplayFor(model => model.NamePro)</h3>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <p class="product-description"><b>Tên sản phẩm:</b> @Html.DisplayFor(model => model.NamePro)</p>
+                                    <h4 class="price"><b>Giá: </b> @Html.DisplayFor(model => model.Price)</h4>
+                                    <p class="vote">
+                                        <strong>100%</strong> Cà phê <strong>chính hãng</strong>, đảm bảo chất lượng
+                                        <strong>
+                                            Uy
+                                            tín
+                                        </strong>!
+                                    </p>
+                                    
+                                    <div class="form-group">
+                                        <label for="soluong">Số lượng đặt mua:</label>
+                                        <input type="number" class="form-control" id="soluong" name="soluong">
+                                    </div>
+                                    <div class="action">
+                                        <div style="align-items:center;">
+                                            <a href="/ShoppingCart/AddToCart/@Html.DisplayFor(model => model.ProductID)" class="add-to-cart btn btn-default" style="align-items:center; width:200px;"> Thêm vào giỏ </a>
+                                            <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-
-
-
-
-
-
             </div>
 
-        </div>
-        @*<p>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.ProductID }) |
-            @Html.ActionLink("Trở về", "Index")
-        </p>*@
+        </main>
     </div>
+</div>
+
+
+
+<div>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.ProductID }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+</div>

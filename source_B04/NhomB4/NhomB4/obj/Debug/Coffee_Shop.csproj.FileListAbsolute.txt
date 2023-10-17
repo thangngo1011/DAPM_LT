@@ -85,3 +85,5 @@ D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\obj\Debug\Coffee_Sho
 D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\obj\Debug\Coffee_Shop.csproj.CopyComplete
 D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\obj\Debug\NhomB4.dll
 D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\obj\Debug\NhomB4.pdb
+D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\bin\Models\CayCanh.Context.tt
+D:\Năm 3\Năm III-Kỳ 1\ĐAPM\LT\source_B04\NhomB4\NhomB4\bin\Models\CayCanh.Context.cs

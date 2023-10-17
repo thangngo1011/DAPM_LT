@@ -157,16 +157,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CayCanh.Context.tt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Models\CayCanh.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CayCanh.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CayCanh.Designer.cs">
+    <Compile Include="Models\Coffee.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CayCanh.edmx</DependentUpon>
+      <DependentUpon>Coffee.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs">
       <DependentUpon>CayCanh.tt</DependentUpon>
@@ -191,6 +192,15 @@
     <Content Include="Content\images\banner2.png" />
     <Content Include="Content\images\banner3.png" />
     <Content Include="Content\images\img1.jpg" />
+    <Content Include="Content\images\img10.jpg" />
+    <Content Include="Content\images\img11.jpg" />
+    <Content Include="Content\images\img12.jpg" />
+    <Content Include="Content\images\img13.jpg" />
+    <Content Include="Content\images\img14.jpg" />
+    <Content Include="Content\images\img15.jpeg" />
+    <Content Include="Content\images\img16.jpeg" />
+    <Content Include="Content\images\img17.jpg" />
+    <Content Include="Content\images\img18.jpg" />
     <Content Include="Content\images\img2.jpg" />
     <Content Include="Content\images\img3.jpg" />
     <Content Include="Content\images\img5.jpg" />
@@ -202,6 +212,7 @@
     <Content Include="Content\images\logo_coffee.png" />
     <Content Include="Content\menu.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\product-detail.css" />
     <Content Include="Content\style4.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -209,22 +220,23 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\CayCanh.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CayCanh.edmx</DependentUpon>
+      <DependentUpon>Coffee.edmx</DependentUpon>
       <LastGenOutput>CayCanh.Context.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Models\CayCanh.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CayCanh.edmx</DependentUpon>
+      <DependentUpon>Coffee.edmx</DependentUpon>
       <LastGenOutput>CayCanh.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\CayCanh.edmx">
+    <EntityDeploy Include="Models\Coffee.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CayCanh.Designer.cs</LastGenOutput>
+      <LastGenOutput>Coffee.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\CayCanh.edmx.diagram">
-      <DependentUpon>CayCanh.edmx</DependentUpon>
+    <Content Include="Models\Coffee.edmx.diagram">
+      <DependentUpon>Coffee.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

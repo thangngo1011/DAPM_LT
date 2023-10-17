@@ -24,15 +24,15 @@
             <table align="center">
                 <tr>
                     <td>
-                        Tên Sản phẩm : <input type="text" name="SearchString" style="height:40px; width:1000px;" />
-                        <input type="submit" value="Tìm kiếm" class="btn btn-warning" height="500" />
+                        Tên cà phê : <input type="text" name="SearchString" style="height:40px; width:1000px;" />
+                        <input type="submit" value="Tìm" class="btn btn-info" height="500" />
                     </td>
                     &nbsp;   &nbsp;   &nbsp;
-                    <td>
+                    @*<td>
                         Đơn giá từ : <input type="number" name="min" />
                         Đến : <input type="number" name="max" />
                         <input type="submit" value="Tìm giá" class="btn btn-info" />
-                    </td>
+                    </td>*@
                 </tr>
             </table>
         }
@@ -47,7 +47,7 @@
             <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card-pro" style="text-align: center; background-color: #ecf0f1;">
                     <p>@Html.DisplayFor(model => pro.ProductID)</p>
-                    <a class="btn btn-muted" href="/Products/Details/@pro.ProductID"><img src="@Url.Content(pro.ImagePro)" width="200" height="250" /></a>
+                    <a class="btn btn-muted" href="/Products/Details/@pro.ProductID"><img src="@Url.Content(pro.ImagePro)" width="240" height="200" /></a>
                     <p>@Html.DisplayFor(model => pro.NamePro)</p>
                     <p>@Html.DisplayFor(model => pro.Price) nghìn</p>
                     <a href="/ShoppingCart/AddToCart/@pro.ProductID" background-color="#3b161e" ; style="width: 200px;"> Đặt hàng </a>
