@@ -8,7 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 }
 
-<h2>ĐĂNG KÝ TÀI KHOẢN KHÁCH HÀNG</h2>
+<h2>ĐĂNG KÝ</h2>
 
 
 @using (Html.BeginForm())
@@ -16,12 +16,12 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>KHÁCH HÀNG</h4>
+        @*<h4>KHÁCH HÀNG</h4>*@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             <div class="control-label col-md-2">
-                <b>Tên khách hàng</b>
+                <b>Tên</b>
             </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.NameCus, new { htmlAttributes = new { @class = "form-control" } })
@@ -31,7 +31,7 @@
 
         <div class="form-group">
             <div class="control-label col-md-2">
-                <b>Số điện thoại khách hàng</b>
+                <b>Số điện thoại</b>
             </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PhoneCus, new { htmlAttributes = new { @class = "form-control" } })
@@ -41,7 +41,7 @@
 
         <div class="form-group">
             <div class="control-label col-md-2">
-                <b>Email khách hàng</b>
+                <b>Email</b>
             </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.EmailCus, new { htmlAttributes = new { @class = "form-control" } })
@@ -65,7 +65,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Đăng ký" class="btn btn-primary" />
             </div>
         </div>
     </div>

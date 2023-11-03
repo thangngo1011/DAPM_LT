@@ -146,3 +146,5 @@ Insert into OrderDetail (IDProduct, IDOrder, Quantity, UnitPrice)
 
 	ALTER TABLE Customer
 ADD UserName varchar(50), Password nvarchar(50)
+
+select * from Customer

@@ -12,7 +12,7 @@
         color: red;
     }
 </style>
-<div align="center">
+<div align="left">
     <h2>PHÂN QUYỀN</h2>
     @using (Html.BeginForm("RegisterUser", "LoginUsers", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
@@ -33,9 +33,9 @@
         <p>@Html.LabelFor(model => Model.PasswordUser) </p>
         <p>@Html.PasswordFor(model => model.PasswordUser) </p>
         <p>@Html.ValidationMessageFor(model => model.PasswordUser) </p>
-        <p>@Html.LabelFor(model => Model.ConfirmPass) </p>
-        <p>@Html.PasswordFor(model => model.ConfirmPass) </p>
-        <p>@Html.ValidationMessageFor(model => model.ConfirmPass) </p>
-        <input type="submit" value="Ghi" class="btn btn-primary" />
+        @*<p>@html.labelfor(model => model.conformpass) </p>
+        <p>@html.passwordfor(model => model.confirmpass) </p>
+        <p>@html.validationmessagefor(model => model.confirmpass) </p>*@
+        <input type="submit" value="Lưu" class="btn btn-primary" />
     }
 </div>
