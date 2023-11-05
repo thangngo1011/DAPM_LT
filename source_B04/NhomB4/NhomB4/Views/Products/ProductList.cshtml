@@ -1,4 +1,4 @@
-﻿@*@model IEnumerable<NhomB4.Models.Product>*@
+@*@model IEnumerable<NhomB4.Models.Product>*@
 <!-- Thêm thư viện & thay đổi mô hình để sử dụng thư viện phân trang -->
 @using PagedList.Mvc;
 @model PagedList.IPagedList<NhomB4.Models.Product>
@@ -13,26 +13,26 @@
     <div class="col-xl-12">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-            <li data-target="#myCarousel"
-                data-slide-to="0"
-                class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-            <div class="carousel-inner">
+                <li data-target="#myCarousel"
+                    data-slide-to="0"
+                    class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 100vh;">
                 <div class="item active">
-                    <img src="~/Content/images/banner1.png"
-                         alt="New York" />
-                </div>
-
-                <div class="item">
-                    <img src="~/Content/images/banner2.png"
-                         alt="Chicago" />
+                    <img src="~/Content/images/banner1.png" alt="New York" width="100%" max-width="1000" height="500" class="img-responsive" />
                 </div>
                 <div class="item">
-                    <img src="~/Content/images/banner3.png" />
+                    <img src="~/Content/images/banner2.png" alt="Chicago" width="100%" max-width="1000" height="500" class="img-responsive" />
+                </div>
+                <div class="item">
+                    <img src="~/Content/images/banner3.png" alt="Los Angeles" width="100%" max-width="1000" height="500" class="img-responsive" />
                 </div>
             </div>
+
+
+
             <a class="left carousel-control"
                href="#myCarousel"
                data-slide="prev">
@@ -87,7 +87,7 @@
                     <p style="text-align: center; ">
                         <a class="btn btn-info" href="/Products/Details/@pro.ProductID"> Chi tiết </a>
                         <a href="/ShoppingCart/AddToCart/@pro.ProductID" class="btn btn-danger"> Thêm vào giỏ </a>
-                    </p> 
+                    </p>
 
                 </div>
             </div>
