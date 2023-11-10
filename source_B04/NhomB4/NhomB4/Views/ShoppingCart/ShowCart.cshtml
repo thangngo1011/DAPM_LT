@@ -1,4 +1,4 @@
-﻿@model NhomB4.Models.Cart
+@model NhomB4.Models.Cart
 
 @{
     ViewBag.Title = "ShowCart";
@@ -35,7 +35,7 @@
                         @using (Html.BeginForm("Update_Cart_Quantity", "ShoppingCart"))
                         {
                             <input type="hidden" value="@item._product.ProductID" name="idPro" />
-                            <input type="number" value="@item._quantity" name="carQuantity" style="text-align: right" />
+                            <input type="number" value="@item._quantity" name="carQuantity" style="text-align: right" min="0" />
                             <input type="submit" value="Cập nhật" />
                         }
                     </td>
